@@ -94,7 +94,7 @@ p{
 h3.menu-item-title {
   margin: 0 0 10px;
 }
-.col-md-12 {
+.col-md-12 .col-lg-12 .col-sm-12 .col-xs-12 .col-xxs-12{
   font-size: .9em;
 }
 /* END SINGLE CATEGORY PAGE */
@@ -108,7 +108,7 @@ h3.menu-item-title {
     padding-left: 15px;
     margin-left: 15px;
   }
-  .col-md-12{
+  .col-lg-12{
     width:100%;
   }
 }
@@ -137,7 +137,7 @@ h3.menu-item-title {
      padding-left: 15px;
     margin-left: 15px;
   }
-  .col-md-12{
+  .col-sm-12{
     width:100%;
   }
 
@@ -152,6 +152,9 @@ h3.menu-item-title {
     text-align: left;
      padding-left: 15px;
     margin-left: 15px;
+  }
+   .col-xs-12{
+    width:100%;
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -191,10 +194,6 @@ h3.menu-item-title {
     text-align: left;
      padding-left: 15px;
     margin-left: 15px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 5vw;
   }
   /* End Header */
   
