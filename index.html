@@ -1,144 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Our Menu</title>
-<style>
-
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  text-align: center;
-}
-
-p {
-  border: 2px solid black;
-  background-color: grey;
-  width: 95%;
-  height: 150px;
-  padding-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: black;
-  text-align: left;
-  padding-left:5px;
-}
-
-#p1 {
-  background-color: pink;
-  float: right;
-  height: 30px;
-  width: 20%;
-  padding-top: 3px;
-  padding-left: 0px;
-  text-align: center;
-  margin-right: 2.5%;
-  font-weight: bold;
-}
-
-#p2 {
-  background-color: maroon;
-  float: right;
-  height: 30px;
-  width: 20%;
-  padding-top: 3px;
-  padding-left: 0px;
-  text-align: center;
-  color: white;
-  margin-right: 2.5%;
-  font-weight: bold;
-}
-
-#p3 {
-  background-color: burlywood;
-  float: right;
-  height: 30px;
-  width: 20%;
-  padding-top: 3px;
-  padding-left: 0px;
-  text-align: center;
-  margin-right: 2.5%;
-  font-weight: bold;
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-4, .col-lg-4, .col-lg-4 {
-    float: left;
-    border: 1px white;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6, .col-md-6, .col-md-12 {
-    float: left;
-    border: 1px white;
-  }
-  .col-md-6 {
-    width: 50%;
-    padding-left: 10px;
-  }
-  .col-md-6 {
-    width: 50%;
-    padding-right: 10px;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
-/********** Small devices only **********/
-@media (max-width: 767px) {
-  .col-sm-12, .col-sm-12, .col-sm-12 {
-    float: left;
-    border: 1px white;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-
-
-</style>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 <body>
-<h1>Our Menu</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html">
+          </a>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12" ><p id="p1"> Chicken </p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-  <div class="col-lg-4 col-md-6 col-sm-12"><p id="p2"> Beef </p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-  <div class="col-lg-4 col-md-12 col-sm-12"><p id="p3"> Sushi </p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-</div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        
+        <div id="collapsable-nav" class="collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right" class="hidden-xs">
+            <li>
+             <a href="a.html"> Chicken</a>
+            </li>
+            <li>
+             <a href="a.html"> Beef</a>
+            </li>
+            <li>
+             <a href="a.html"> Sushi</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
 
+    <h2>Our Menu</h2 > 
+
+      <div id="main-content">
+      <div class="menu-item-tile col-md-12">
+        <div class="row">
+            <h3 id="menu-item-title" class="text-center">Chicken</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+        </div>
+      </div>
+       </div>
+
+      <div id="main-content">
+      <div class="menu-item-tile col-md-12">
+        <div class="row">
+            <h3 id="menu-item-title" class="text-center">Beef</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+        </div>
+      </div>
+       </div>
+
+      <div id="main-content">
+      <div class="menu-item-tile col-md-12">
+        <div class="row">
+            <h3 id="menu-item-title" class="text-center">Sushi</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+        </div>
+      </div>
+    </div>  
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
