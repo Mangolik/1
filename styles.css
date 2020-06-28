@@ -58,7 +58,7 @@ body {
 }
 
 /* END HOME PAGE */
-h2{
+.text-center {
   text-align: center;
   padding-bottom: 30px;
 }
@@ -70,7 +70,7 @@ p{
 }
 
 /* SINGLE CATEGORY PAGE */
-.menu-item-tile {
+.row {
   margin-bottom: 30px;
   background-color: grey;
   color: black;
@@ -80,21 +80,21 @@ p{
   padding-left: 20px;
   padding-right: 20px;
 }
-.menu-item-tile hr {
+.row hr {
   width: 80%;
 }
-.menu-item-tile {
+.row {
   font-size: 1.1em;
   text-align: left;
   margin-top: -15px;
 }
-.menu-item-tile span {
+.row span {
   font-size: .6em;
 }
 h3.menu-item-title {
   margin: 0 0 10px;
 }
-.menu-item-details {
+.col-md-12 {
   font-size: .9em;
 }
 /* END SINGLE CATEGORY PAGE */
@@ -108,6 +108,9 @@ h3.menu-item-title {
     padding-left: 15px;
     margin-left: 15px;
   }
+  .col-md-12{
+    width:100%;
+  }
 }
 
 /********** Medium devices only **********/
@@ -118,6 +121,9 @@ h3.menu-item-title {
     text-align: left;
      padding-left: 15px;
     margin-left: 15px;
+  }
+  .col-md-12{
+    width:100%;
   }
   /* End Home Page */
 }
@@ -131,6 +137,8 @@ h3.menu-item-title {
      padding-left: 15px;
     margin-left: 15px;
   }
+  .col-md-12{
+    width:100%;
   }
 
   /* End Home Page */
@@ -153,7 +161,7 @@ h3.menu-item-title {
     font-size: 1em;
     margin-right: 5px;
   }
-   #nav-list {
+  #nav-list {
   margin-top: 10px;
 }
 #nav-list a {
